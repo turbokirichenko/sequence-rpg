@@ -311,4 +311,3 @@ function sequenceGenerator (props) {
 };
 
 module.exports = sequenceGenerator;
-

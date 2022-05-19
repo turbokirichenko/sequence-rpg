@@ -130,6 +130,6 @@ const result = sequences.make({
 
 ## More Example 
 
-*[docs]https://github.com/turbokirichenko/sequence-rpg/blob/main/index.test.js
-*[issues]https://github.com/turbokirichenko/sequence-rpg/issues
-*[open code]https://github.com/turbokirichenko/sequence-rpg
+* [docs](https://github.com/turbokirichenko/sequence-rpg/blob/main/index.test.js)
+* [issues](https://github.com/turbokirichenko/sequence-rpg/issues)
+* [open code](https://github.com/turbokirichenko/sequence-rpg)
