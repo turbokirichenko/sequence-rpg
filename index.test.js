@@ -23,7 +23,6 @@ describe('sequence tests', () => {
 				need: true //required
 			}
 		}, 10); //size of sequence
-
 		
 		//checking
 		tq("boolean", result[0].odd);
