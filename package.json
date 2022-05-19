@@ -1,6 +1,6 @@
 {
   "name": "sequence-rpg",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Generates professional random sequences!",
   "main": "index.js",
   "scripts": {
