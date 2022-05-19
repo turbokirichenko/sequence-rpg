@@ -84,7 +84,7 @@ describe('sequence tests', () => {
 			return 'head of user: ' + params.string; // expect: 12345
 		}
 		//create sequence to object
-		const sequences = new generator({});
+		const sequences = new  generator({});
 		const result = sequences.make({ //schema object
 			id: {
 				prefix: String,
