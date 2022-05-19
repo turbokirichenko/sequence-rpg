@@ -16,6 +16,13 @@
     "schema",
     "mongoose"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:turbokirichenko/sequence-rpg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/turbokirichenko/sequence-rpg/issues"
+  },
   "author": "turbokirichenko",
   "license": "MIT",
   "devDependencies": {

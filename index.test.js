@@ -145,4 +145,22 @@ describe('sequence tests', () => {
 		//check
 		eq(obj.unit.race, "Orc", "Dwarf", "Human", "Elf", "Unicorn");
 	});
+	it('type Error', () => {
+		const sequences = new generator({});
+		
+		const errorExample = sequences.make({ //returned sequence of strings
+			type: String,
+			name: String, // name as parameter for type: String
+		}, 4);
+
+		const correctExample = sequences.make({
+			type: {
+				type: String,
+			},
+			name: String, // name as key from object
+		}, 4)
+		const obj = correctExample[0];
+		tq("string", errorExample[0]);
+		tq("string", obj.name);
+	})
 })

@@ -1,10 +1,8 @@
 # sequence-rpg
 ### generates professional random sequences
 ---
-![alt text](https://img.shields.io/badge/bitcoin-wallet-yellow|"none")
-![alt text](https://img.shields.io/badge/btc%20test-mvwWrWtiToK6RJ1iyQh1EgQpWgJwV2NgVv-brightgreen?style=flat-square)
-![alt text](https://img.shields.io/github/watchers/turbokirichenko/cash-by-hash?style=flat-square)
-![alt text](https://img.shields.io/npm/dy/cash-by-hash?style=flat-square)
+![alt text](https://img.shields.io/github/package-json/v/turbokirichenko/sequence-rpg?style=for-the-badge)
+![alt text](https://img.shields.io/github/repo-size/turbokirichenko/sequence-rpg?style=for-the-badge)
 ---
 ## Getting Started
 ```
@@ -124,3 +122,7 @@ const result = sequences.make({
 //]
 ```
 ---
+
+## More Examples ...
+
+https://github.com/turbokirichenko/sequence-rpg/blob/main/index.test.js
