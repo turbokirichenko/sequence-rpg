@@ -9,8 +9,13 @@
 $ npm i sequence-rpg --save-dev
 
 ```
-## Simple example
+## NodeJS
+```js
+const generator = require('sequence-rpg');
 ```
+
+## Simple example
+```js
 const generator = require('sequence-rpg');
 
 const sequences = new generator({ minNumber: 1, maxNumber: 10 }) // config object
@@ -32,7 +37,7 @@ console.log(result);
 ```
 
 ## Commonly example
-```
+```js
 // create array from object
 const result = sequences.make({ 
 	name: "SuperMan123", //constant value
@@ -78,7 +83,7 @@ console.log(result);
 ```
 
 ## Extremely example
-```
+```js
 //your custom type:
 const MyCustomType = (opts) => { //opts param required!!!
 	const race = opts.race(); //getter!!!
@@ -123,6 +128,8 @@ const result = sequences.make({
 ```
 ---
 
-## More Examples ...
+## More Example 
 
-https://github.com/turbokirichenko/sequence-rpg/blob/main/index.test.js
+*[docs]https://github.com/turbokirichenko/sequence-rpg/blob/main/index.test.js
+*[issues]https://github.com/turbokirichenko/sequence-rpg/issues
+*[open code]https://github.com/turbokirichenko/sequence-rpg
