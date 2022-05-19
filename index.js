@@ -200,6 +200,7 @@ function sequenceGenerator (props) {
 		//
 		let array = [];
 		this.props = Props;
+		if (!this.props.array_range) this.props.array_range = [];
 		const minSize = this.props.array_size || this.props.array_range[0] || config.array_range[0];
 		const maxSize = this.props.array_size || this.props.array_range[1] || config.array_range[1];
 		const size = Math.floor(Math.random() * (maxSize - minSize) + minSize);
