@@ -74,7 +74,8 @@ function sequenceGenerator (props) {
 		}
 	}
 	//value from list
-	function RandomValueFromList (...list) {
+	function RandomValueFromList (l, ...p) {
+		const list = Array.isArray(l) ? l : [l, ...p]; 
 		if (!Array.isArray(list)) throw new Error ('list: must be Array!');
 		return RandomValue = (props = {}) => {
 			const size = list.length;
@@ -83,7 +84,8 @@ function sequenceGenerator (props) {
 		}
 	}
 	//gen unique value
-	function UniqueRandomValueFromList (...list) {
+	function UniqueRandomValueFromList (l, ...p) {
+		const list = Array.isArray(l) ? l : [l, ...p]; 
 		if (!Array.isArray(list)) throw new Error ('list: must be Array!');
 		list.sort((a,b) => Math.random()*10 - Math.random()*10);
 		let randomList = list.filter((v) => v);
@@ -187,11 +189,16 @@ function sequenceGenerator (props) {
 		for (key in schema) {
 			const value = schema[key];
 			if (typeof value === "function" && value.name == "__link$") {
-				opts[key] = () => value().__value$
+				opts[key] = () => {
+					const res = value();
+					const answ = eq("object", res) ? Finish(res) : res;
+					return eq("function", answ) ? answ() : answ;
+				}
 			}
-			else opts[key] = eq("function", value) ? MakeFunc(value) : () => value;
+			else opts[key] = eq("function", value) ? MakeFunc(value) : Finish(Transform(value));
 		}
 		return (add = {}) => {
+			//
 			return func({...opts, ...add});
 		}
 	}
@@ -301,10 +308,11 @@ function sequenceGenerator (props) {
 			//compute context
 			Context = Transform(this.schema);
 			Schema = this.schema;
+			Context = Complete(Build(Context));
 			//compute result
-			let result = Finish(Complete(Build(Context)));
+			Context = Finish(Context);
 			//push to sequence
-			sequence.push(result);
+			sequence.push(Context);
 		}
 		return sequence;
 	}

@@ -1,8 +1,7 @@
 # sequence-rpg
-### generates professional random sequences
+# DEPRECATED!!!
 ---
-![alt text](https://img.shields.io/github/package-json/v/turbokirichenko/sequence-rpg?style=for-the-badge)
-![alt text](https://img.shields.io/github/repo-size/turbokirichenko/sequence-rpg?style=for-the-badge)
+##[visit-new-project](https://www.npmjs.com/package/sequence-maker)
 ---
 ## Getting Started
 ```
