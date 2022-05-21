@@ -1,7 +1,7 @@
 # sequence-rpg
 # DEPRECATED!!!
 ---
-##[visit-new-project](https://www.npmjs.com/package/sequence-maker)
+## [visit-new-project](https://www.npmjs.com/package/sequence-maker)
 ---
 ## Getting Started
 ```
